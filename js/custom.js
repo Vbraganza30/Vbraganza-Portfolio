@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Set active nav link
-    const currentPage = location.pathname.split('/').pop() || 'index.html';
+    const currentPage = location.pathname.split('/').pop() || '/Vbraganza-Portfolio/index.html';
     document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');
