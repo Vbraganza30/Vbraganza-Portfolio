@@ -109,3 +109,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+if (document.querySelector('form[netlify]')) {
+  document.querySelector('form').addEventListener('submit', function() {
+    document.getElementById('form-success').classList.remove('d-none');
+    setTimeout(() => {
+      this.reset();
+    }, 2000);
+  });
+}
