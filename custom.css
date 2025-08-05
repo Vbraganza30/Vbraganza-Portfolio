@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Styling */
+.form-control {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #2d2d2d;
+    border-color: #0dcaf0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+    color: #fff;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0dcaf0 !important;
+}
+
+/* Section Spacing */
+main {
+    padding: 2rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        min-height: auto;
+    }
+    
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
